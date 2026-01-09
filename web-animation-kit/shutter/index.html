@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shutter | Web Animation Kit</title>
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="../common/fonts/webfonts.css">
+    <link rel="stylesheet" href="../common/css/default.css">
+    <link rel="stylesheet" href="../common/css/variables.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/ui.css">
+    <!--　個別デザインの指定 -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <section class="title">
+        <div class="title-container">
+            <h1><span class="en">Shutter</span></h1>
+            <div class="explain">
+                <p><span class="en">SMOOTH TRANSITION WITH OPENING EFFECT</span></p>
+            </div><!-- /.explain -->
+        </div><!-- /.title-container -->
+    </section><!-- /.title -->
+
+    <main class="main-shutter">
+        <!--------------------------  shutter-01  -------------------------->
+        <section>
+            <div class="type"><span class="en">Type 01</span></div><!-- /.type -->
+            <div class="shutter-01">
+                <div class="triangle triangle-01"></div><!-- /.triangle-01 -->
+                <div class="triangle triangle-02"></div><!-- /.triangle-02 -->
+            </div><!-- end .shutter-01 -->
+        </section>
+        <!--------------------------  shutter-02  -------------------------->
+        <section>
+            <div class="type"><span class="en">Type 02</span></div><!-- /.type -->
+            <div class="shutter-02">
+                <div class="border"></div><!-- /.border -->
+                <div class="rectangle rectangle-01"></div><!-- /.rectangle-01 -->
+                <div class="rectangle rectangle-02"></div><!-- /.rectangle-02 -->
+            </div><!-- end .shutter-02 -->
+        </section>
+        <!--------------------------  shutter-03  -------------------------->
+        <section>
+            <div class="type"><span class="en">Type 03</span></div><!-- /.type -->
+            <div class="shutter-03">
+                <div class="bg-image"><img src="./images/bg.jpg" alt="*" width="1600" height="1200"></div><!-- end .bg -->
+                <div class="bg-color"></div><!-- end .bg-color -->
+            </div><!-- end .shutter-03 -->
+        </section>
+        <!--------------------------  shutter-04  -------------------------->
+        <section>
+            <div class="type"><span class="en">Type 04</span></div><!-- /.type -->
+            <div class="shutter-04">
+                <div class="overlay overlay-first"></div><!-- /.overlay-first -->
+                <div class="overlay overlay-after"></div><!-- /.overlay-after -->
+            </div><!-- end .shutter-04 -->
+        </section>
+
+    </main>
+</div>
+    <!--　GSAPを読む込む -->
+    <script src="../common/js/gsap.min.js"></script>
+    <script src="../common/js/ScrollTrigger.min.js"></script>
+    <!--　個別アニメーションの指定 -->
+    <script src="script.js"></script>
+</body>
+</html> 

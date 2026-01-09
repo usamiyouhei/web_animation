@@ -1,0 +1,147 @@
+/* =========================================================================  */
+
+/* shutter-01 */
+
+/* ========================================================================= */
+
+
+.shutter-01 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	.triangle {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		&.triangle-01 {
+			left: 0;
+			top: 0;
+			background: linear-gradient(0deg, rgba(227, 119, 128, 1) 0%, rgba(237, 156, 129, 1) 100%);
+			clip-path: polygon(0 0, 0% 100%, 100% 0);
+			
+		}
+		&.triangle-02 {
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(0deg, rgba(227, 119, 128, 1) 0%, rgba(237, 156, 129, 1) 100%);
+			clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+			
+		}
+	}
+}
+
+
+/* =========================================================================  */
+
+/* shutter-02 */
+
+/* ========================================================================= */
+
+
+.shutter-02 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	.border {
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		top: 50%;
+		transform: translate(0,-50%);
+		background: linear-gradient(0deg, rgb(247, 203, 207) 0%, rgb(245, 203, 189) 100%);
+		width: 100%;
+		height: 1px;
+
+	}
+	.rectangle {
+		position: absolute;
+		z-index: 1;
+		background: linear-gradient(90deg, rgba(227, 119, 128, 1) 0%, rgba(237, 156, 129, 1) 100%);
+		width: 100%;
+		height: 50%;
+		&.rectangle-01 {
+			left: 0;
+			top: 0;
+		}
+		&.rectangle-02 {
+			right:0;
+			bottom: 0;
+		}
+	}
+}
+
+
+/* =========================================================================  */
+
+/* shutter-03 */
+
+/* ========================================================================= */
+
+
+.shutter-03 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    .bg-image {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .bg-color {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        opacity: 0.6;
+        left: 0;
+        top: 0;
+        background: linear-gradient(90deg, rgba(32,32,32,1) 0%, rgba(0,0,0,1) 100%);
+        mix-blend-mode: multiply;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* =========================================================================  */
+
+/* shutter-04 */
+
+/* ========================================================================= */
+
+
+.shutter-04 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	.overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		opacity: 0;
+		visibility: hidden;
+		width: 100%;
+		height: 100%;
+		/* 先行バー：流れて消える */
+		&.overlay-first {
+			z-index: 1;
+			background: linear-gradient(90deg, rgb(162, 56, 64) 0%, rgb(196, 78, 39) 100%);
+		}
+
+		/* 後続：本体オーバーレイ */
+		&.overlay-after {
+			z-index: 2;
+			background: linear-gradient(90deg, rgba(227, 119, 128, 1) 0%, rgba(237, 156, 129, 1) 100%);
+
+		}
+	}
+}

@@ -1,0 +1,206 @@
+/* ==========================================================================
+   レイアウト・装飾スタイル
+   ========================================================================== */
+
+/* ==========================================================================
+   以下のスタイルはデモ表示用のUIスタイルです
+   ハンバーガーメニューの実装には直接関係ありません
+   ========================================================================== */
+
+/* フレックスレイアウト */
+.flex-list {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 10rem 2%;
+
+    li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 
+            8px 8px 16px rgb(0 0 0 / 3%),
+            -3px -3px 6px rgb(255 255 255 / 8%),
+            inset 1px 1px 2px rgb(255 255 255 / 8%),
+            inset -1px -1px 2px rgb(0 0 0 / 3%);
+        background: rgb(255 255 255 / 10%);
+        width: 40rem;
+        height: 40rem;
+        margin-top: 3.2rem;
+        padding: 3.2rem;
+        backdrop-filter: blur(10px);
+
+        &:nth-child(even) {
+            background: rgb(255 255 255 / 15%);
+        }    
+    }
+}
+
+.flex-list-02{
+    position: relative;
+
+    li {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        background: rgb(255 255 255 / 10%);
+        width:100%;
+        height: 100vh;
+        margin-top: 3.2rem;
+        padding: 3.2rem;
+        backdrop-filter: blur(10px);
+
+        &::before{
+            content:"";
+            position: absolute;
+            left:0;
+            top:0;
+            background: linear-gradient(45deg, 
+            #dc42a4 0%,
+            #dc7146 70%,
+            #e2b24a 100%
+            );
+            width: 100%;
+            height: 2px;           
+        }
+
+        &:nth-child(even) {
+            background: rgb(255 255 255 / 15%);
+        }    
+    }
+}
+
+.hamburger-menu-type,
+.modal-type {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+
+    .en {
+        color: #333;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        font-size: 1.4rem;
+    }    
+}
+
+
+.accordion-type {
+    text-align: center;
+    margin: 0 0 1rem;
+
+    .en {
+        color: #333;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        font-size: 1.4rem;
+    }    
+}
+
+
+.splide-caption {
+    text-align: center;
+    margin: 8rem 0 1.6rem;
+
+    .en {
+        color: #333;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        font-size: 1.4rem;
+    }    
+}
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(小型PC)までのモニタで適用	◆
+
+start---------------------------------------------------------------------------- */
+
+@media screen and (width >= 1024px) and (width <= 1280px) {
+    .flex-list {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10rem 2%;
+    
+        li {
+            width: 47vw;
+            height: 47vw;
+            margin-top: 3.2rem;
+            padding: 3.2rem; 
+        }
+    }
+} /* 1024px～1280px responsive-close */
+
+/* end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start---------------------------------------------------------------------------- */
+
+@media screen and (width >= 768px) and (width <= 1023px) {
+    .flex-list {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10rem 2%;
+    
+        li {
+            width: 47vw;
+            height: 47vw;
+            margin-top: 3.2rem;
+            padding: 3.2rem; 
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/* end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start---------------------------------------------------------------------------- */
+@media screen and (width <= 767px) {
+    .flex-list {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10rem 2%;
+
+        li {
+            width: 90vw;
+            height: 90vw;
+            margin: 3.2rem auto 0;
+            padding: 3.2rem; 
+        }
+    }
+} /* 767px responsive-closed */
+
+/* end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
