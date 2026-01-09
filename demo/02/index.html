@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 02 | Web Animation Kit</title>
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="../common/fonts/webfonts.css">
+    <link rel="stylesheet" href="../common/css/default.css">
+    <link rel="stylesheet" href="../common/css/variables.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/ui.css">
+    <!--　個別デザインの指定 -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+    <main class="demo-02">
+        <div class="shutter-04">
+            <div class="overlay overlay-first"></div><!-- /.overlay-first -->
+            <div class="overlay overlay-after"></div><!-- /.overlay-after -->
+        </div><!-- end .shutter-04 -->
+        <div class="main-img"><img src="./images/main-img.jpg" alt="*" width="1920" height="1080"></div><!-- /.bg -->
+        <div class="bg-overlay"></div><!-- /.bg-overlay -->
+        <div class="bg-grade"></div><!-- /.bg-grade -->
+        <div class="triangle"></div><!-- /.bg-triangle -->
+        <div class="container">
+            <div class="text">
+                <div class="en">Over beyond with creative</div><!-- /.en -->
+                <h2>
+                    強い創志。
+                    豊かな制作力と探求心
+                </h2>
+                <div class="sentence">
+                    <p>私たちが求めるのは、「こんな表現をカタチにしたい」「世の中にこういうものを生み出したい」という強い創作意欲をもつ人材です。表面的に整った志望動機よりも、たとえ未完成でも、自分の言葉で語れる想いを大切にしたいと考えています。
+                    </p>
+                    <p>
+                        ビッグアイデアも、ちょっとした違和感も、すべては創造の種。好奇心をエンジンに、新しい視点で世界を編集できる人。既成概念にとらわれず、柔らかく、しなやかに問いを立て、御社の創造的な発展のパートナーとして支えていきます。
+                    </p>
+                </div><!-- /.sentence -->
+                <div class="button">
+                    <a href="#">
+                        <span class="catch">事業内容</span>
+                        <img src="./images/button-icon.svg" alt="*" width="50" height="50">
+                    </a>
+                </div><!-- /.button -->
+            </div><!-- /.text -->
+        </div><!-- /.container -->
+        <div class="shape-02">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div><!-- end .shape-02 -->
+        <div class="text-rotation-02">
+            <span>DIFFERENCE ANOTHER CASE DIFFERENCE ANOTHER CASE</span>
+            <span>DIFFERENCE ANOTHER CASE DIFFERENCE ANOTHER CASE</span>
+        </div><!-- end .text-rotation-01 -->
+    </main>
+</div>
+    <!--　GSAPを読む込む -->
+    <script src="../common/js/gsap.min.js"></script>
+    <script src="../common/js/ScrollTrigger.min.js"></script>
+    <script src="../common/js/SplitText.min.js"></script>
+    <!--　個別アニメーションの指定 -->
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,252 @@
+/* =========================================================================  */
+
+/* shape-01 */
+
+/* ========================================================================= */
+
+
+.shape-01 {
+    width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+    span {
+		position: absolute;
+		background: linear-gradient(45deg, #e37780 0%, #ed9c81 100%);
+		border-radius: 50%;
+		
+		box-shadow: rgba(241, 138, 98, 0.4) 0px 7px 29px 0px;
+		opacity: 0.5;
+		&:nth-child(1) {
+			width: 120px;
+			height: 120px;
+			top: 0%;
+			left: 5%;
+		}
+		&:nth-child(2) {
+			width: 250px;
+			height: 250px;
+			top: 50%;
+			left: -10%;
+		}
+		&:nth-child(3) {
+			width: 80px;
+			height: 80px;
+			top: 10%;
+			right: 5%;
+		}
+		&:nth-child(4) {
+			width: 180px;
+			height: 180px;
+			top: 60%;
+			left: 40%;
+		}
+		&:nth-child(5) {
+			width: 120px;
+			height: 120px;
+			bottom: 10%;
+			right: -1%;
+		}
+    }
+}
+/* =========================================================================  */
+
+/* shape-02 */
+
+/* ========================================================================= */
+
+
+.shape-02 {
+    width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+    span {
+		position: absolute;
+
+		opacity: 0.5;
+		&::before,
+		&::after{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			content: "";
+			transform: rotate(45deg);
+		}
+		&::before{
+			z-index: 2;
+			background: linear-gradient(45deg, #e37780 0%, #ed9c81 100%);
+			/* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+			clip-path: polygon(0% 0%, 0% 100%, 15% 100%, 15% 15%, 85% 15%, 85% 85%, 15% 85%, 15% 100%, 100% 100%, 100% 0%);
+		}
+		&::after{
+			z-index: 1;
+			box-shadow: rgba(241, 138, 98, 0.4) 0px 7px 29px 0px;
+		}
+		&:nth-child(1) {
+			width: 120px;
+			height: 120px;
+			top: 0%;
+			left: 5%;
+			
+		}
+		&:nth-child(2) {
+			width: 250px;
+			height: 250px;
+			top: 50%;
+			left: -10%;
+		}
+		&:nth-child(3) {
+			width: 80px;
+			height: 80px;
+			top: 10%;
+			right: 5%;
+		}
+		&:nth-child(4) {
+			width: 180px;
+			height: 180px;
+			top: 60%;
+			left: 40%;
+		}
+		&:nth-child(5) {
+			width: 120px;
+			height: 120px;
+			bottom: 10%;
+			right: -1%;
+		}
+    }
+}
+
+
+/* =========================================================================  */
+
+/* shape-03 */
+
+/* ========================================================================= */
+
+
+.shape-03 {
+    width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+    span {
+		position: absolute;
+		transform: translateY(30px);
+		opacity: 0;
+		&::before,
+		&::after{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			content: "";
+			transform: skew(-15deg);
+		}
+		&::before{
+			z-index: 2;
+			background: linear-gradient(45deg, #e37780 0%, #ed9c81 100%);
+		}
+		&::after{
+
+			z-index: 1;
+			box-shadow: rgba(241, 138, 98, 0.4) 0px 7px 29px 0px;
+
+		}
+		&:nth-child(1) {
+			width: 120px;
+			height: 120px;
+			top: 0%;
+			left: 5%;
+			
+		}
+		&:nth-child(2) {
+			width: 250px;
+			height: 250px;
+			top: 50%;
+			left: -10%;
+		}
+		&:nth-child(3) {
+			width: 80px;
+			height: 80px;
+			top: 10%;
+			right: 5%;
+		}
+		&:nth-child(4) {
+			width: 180px;
+			height: 180px;
+			top: 60%;
+			left: 40%;
+		}
+		&:nth-child(5) {
+			width: 120px;
+			height: 120px;
+			bottom: 10%;
+			right: -1%;
+		}
+    }
+}
+
+
+
+
+
+
+/* =========================================================================  */
+
+/* shape-04 */
+
+/* ========================================================================= */
+
+.shape-04 {
+    width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	span{
+		position: absolute;
+		background: conic-gradient(
+		from 90deg,
+		#e37780 0%, 
+		#ed9c81 50%, 
+		#e37780 100% 
+		);
+		mask-image: radial-gradient(circle at center, transparent 60px,  61px); 
+		-webkit-mask-image: radial-gradient(circle at center, transparent 60px, black 61px);
+		clip-path: circle(50% at center);
+		transform: rotate(-90deg);
+		transform-origin: center;
+		opacity: 0;
+		&:nth-child(1) {
+			width: 160px;
+			height: 160px;
+			top: 0%;
+			left: 5%;
+			
+		}
+		&:nth-child(2) {
+			width: 250px;
+			height: 250px;
+			top: 50%;
+			left: -10%;
+		}
+		&:nth-child(3) {
+			width: 180px;
+			height: 180px;
+			top: 10%;
+			right: 5%;
+		}
+		&:nth-child(4) {
+			width: 180px;
+			height: 180px;
+			top: 60%;
+			left: 40%;
+		}
+		&:nth-child(5) {
+			width: 200px;
+			height: 200px;
+			bottom: 10%;
+			right: -1%;
+		}
+	}
+
+}

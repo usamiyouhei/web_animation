@@ -1,0 +1,84 @@
+/* =========================================================================  */
+
+/* words-effect-01 */
+
+/* ========================================================================= */
+.words-effect-01 {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto 0;
+	.item{
+		text-align: center;
+		font-family: "Antonio";
+		font-weight: 400;
+		letter-spacing: 0.5rem;
+		color: #e96d78;
+		font-size: 6.2rem;
+	}
+}
+/* =========================================================================  */
+
+/* words-effect-02 */
+
+/* ========================================================================= */
+.words-effect-02 {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto 0;
+	.item{
+		text-align: center;
+		font-family: "Antonio";
+		font-weight: 400;
+		letter-spacing: 0.5rem;
+		color: #e96d78;
+		font-size: 6.2rem;
+	}
+}
+/* =========================================================================  */
+
+/* words-effect-03 */
+
+/* ========================================================================= */
+.words-effect-03 {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto 0;
+	.item{
+		text-align: center;
+		font-family: "Antonio";
+		font-weight: 400;
+		letter-spacing: 0.5rem;
+		color: #e96d78;
+		font-size: 6.2rem;
+	}
+}
+
+/* =========================================================================  */
+
+/* words-effect-04 */
+
+/* ========================================================================= */
+.words-effect-04 {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto 0;
+	flex-direction: column;
+	.item{
+		text-align: center;
+		font-family: "Antonio";
+		font-weight: 400;
+		letter-spacing: 0.5rem;
+		font-size: 6.2rem;
+		text-align: center;
+		-webkit-text-stroke: 1px #f08080;
+		color: rgba(255, 255, 255, 0);
+		line-height: 1.0;
+		opacity: 0.5;
+		margin: 10px 0 0 0;
+		visibility: hidden;
+		&:first-child{
+			margin: 10px 0 0 0;
+		}
+	}
+}
+

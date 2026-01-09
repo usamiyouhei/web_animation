@@ -1,0 +1,130 @@
+/* =========================================================================  */
+
+/* text-appear-01 */
+
+/* ========================================================================= */
+.text-appear-01 {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto 0;
+	h2{
+		color: #e96d78;
+		font-size: 4.2rem;
+		opacity: 0;
+		transform: translate(0, 30px) scale(0.95);
+		filter: blur(6px);
+
+	}
+	p {
+		color: #333333;
+		line-height: 2.0;
+		margin: 2rem 0 0 0;
+		font-size: 1.1rem;
+		letter-spacing: 0.1rem;
+		font-size: 1.9rem;
+		opacity: 0;
+		transform: translate(0, 30px) scale(0.95);
+		filter: blur(6px);
+	}
+
+}
+
+/* =========================================================================  */
+
+/* text-appear-02 */
+
+/* ========================================================================= */
+.text-appear-02 {
+
+	position: relative;
+	width: 1000px;
+	margin: 0 auto 0;
+	h2{
+		color: #e96d78;
+		font-size: 4.2rem;
+		span {
+			display: inline-block;
+			transform: translateY(20px);
+		}
+
+	}
+	p {
+		color: #333333;
+		line-height: 2.0;
+		margin: 2rem 0 0 0;
+		font-size: 1.1rem;
+		letter-spacing: 0.1rem;
+		font-size: 1.9rem;
+		span {
+			display: inline-block;
+			opacity: 0;
+			transform: translateY(20px);
+		}
+	}
+
+}
+
+
+
+
+
+/* =========================================================================  */
+
+/* text-appear-03 */
+
+/* ========================================================================= */
+.text-appear-03 {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto 0;
+	h2{
+		color: #e96d78;
+		font-size: 4.2rem;
+		.inner{
+			display: inline-block;
+			position: relative;
+			.phrase{
+				transform: translateY(30px);
+				filter: blur(8px);
+			}
+			.reveal{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: #e96d78;
+				z-index: 2;
+				transform: translateX(-120%); /* ←スタート位置を画面外にしておく */
+			}
+		}
+
+
+	}
+	p {
+		color: #333333;
+		line-height: 2.0;
+		margin: 2rem 0 0 0;
+		font-size: 1.1rem;
+		letter-spacing: 0.1rem;
+		font-size: 1.9rem;
+		.inner {
+			display: inline-block;
+			position: relative;
+			.phrase{
+				transform: translateY(30px);
+				filter: blur(8px);
+			}
+			.reveal{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: #e96d78;
+				z-index: 2;
+				transform: translateX(0);
+			}
+		}
+
+	}
+
+}
+
+
