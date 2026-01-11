@@ -1,0 +1,85 @@
+/* 全フォルダ共通設定用CSS */
+@import "../common/css/default/font-face";
+@import "../common/css/default/variables";
+@import "../common/css/default/global";
+
+body{
+    width: 100%;
+    background: $brown-grade-color;
+    &::before{
+        content:"";
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-image: $radial-grade-color;
+        opacity: 0.6;
+    }
+}
+
+.lecture{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    .blank{
+        width: 90%;
+        margin: 0 auto 0;
+        height: 125vh;
+        background: $brown-grade-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: $red-color;
+            font-size: 40px;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+    }
+    .target{
+        
+        margin: 200px auto 0;
+        background: $grade-color;
+        width: 90%;
+        padding: 150px 0 150px 0;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            li{
+                width: 25%;
+                height: 200px;
+                background: #fff;
+
+            }
+        }
+    }
+
+
+
+    .main{
+        background: $grade-color;
+        width: 200px;
+        height: 200px;
+    }
+    h2{
+        color: $red-color;
+        font-size: 20px;
+    }
+    .sentence{
+        color: $red-color;
+        margin: 10px 0 0 0;
+        font-size: 18px;
+    }
+    ul{
+        margin: 10px 0 0 0;
+        li{
+            color: $orange-color;
+            font-size: 16px;
+            padding: 10px 0 10px 0;
+        }
+    }
+    a,span{
+        color:#fff;
+    }
+}
