@@ -45,23 +45,31 @@ document.querySelectorAll(".border-03").forEach((el) => {
 	.to(el.querySelector(".border-bottom"), { width:  "20%", opacity: 1 }, "<");
 });
 
-document.querySelectorAll(".border-04").forEach((el) => {
-	gsap.timeline({
-		delay: 0.3,
-		defaults: { ease: "power4.out", duration: 0.4 },
-		scrollTrigger: {
-			trigger: el,
-			start: "top 50%", 
-			toggleActions: "play reverse play reverse", 
-		},
-	})
-    .to(el.querySelector(".border-left"),   { height: "100%", opacity: 1 })
-    .to(el.querySelector(".border-top"),    { width:  "100%", opacity: 1 })
-    .to(el.querySelector(".border-right"),  { height: "100%", opacity: 1 })
-    .to(el.querySelector(".border-bottom"), { width:  "100%", opacity: 1 })
-    .to(el, { opacity: 0 });
-});
+// document.querySelectorAll(".border-04").forEach((el) => {
+// 	gsap.timeline({
+// 		delay: 0.3,
+// 		defaults: { ease: "power4.out", duration: 0.4 },
+// 		scrollTrigger: {
+// 			trigger: el,
+// 			start: "top 50%", 
+// 			toggleActions: "play reverse play reverse", 
+// 		},
+// 	})
+//     .to(el.querySelector(".border-left"),   { height: "100%", opacity: 1 })
+//     .to(el.querySelector(".border-top"),    { width:  "100%", opacity: 1 })
+//     .to(el.querySelector(".border-right"),  { height: "100%", opacity: 1 })
+//     .to(el.querySelector(".border-bottom"), { width:  "100%", opacity: 1 })
+//     .to(el, { opacity: 0 });
+// });
 
+const border04Tl = gsap.timeline();
+
+border04Tl
+.to((".border-04 .border-left"),   { height: "100%", opacity: 1 })
+    .to((".border-04 .border-top"),    { width:  "100%", opacity: 1 })
+    .to((".border-04 .border-right"),  { height: "100%", opacity: 1 })
+    .to((".border-04 .border-bottom"), { width:  "100%", opacity: 1 })
+    .to((".border-04 "), { opacity: 0 });
 
 
 

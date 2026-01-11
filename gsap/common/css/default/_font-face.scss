@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+$font-path: "../common/webfonts";
+
+@font-face {
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 500;
+    src: url("#{$font-path}/Murecho-Medium-Subset.woff2") format("woff2"),
+    url("#{$font-path}/Murecho-Medium-Subset.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Murecho";
+    font-style: normal;
+    font-weight: 600;
+    src: url("#{$font-path}/Murecho-SemiBold-Subset.woff2") format("woff2"),
+    url("#{$font-path}/Murecho-SemiBold-Subset.woff") format("woff");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Antonio";
+    font-style: normal;
+    font-weight: 400;
+    src: url("#{$font-path}/Antonio-Regular.woff2") format("woff2"),
+    url("#{$font-path}/Antonio-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    src: url("#{$font-path}/Jost-SemiBold.woff2") format("woff2"),
+    url("#{$font-path}/Jost-SemiBold.woff") format("woff");
+    font-display: swap;
+}
+
